@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function updateConnectionStatus() {
         try {
             const response = await fetch('https://chimerical-maamoul-383309.netlify.app/api/status', {
+            const response = await fetch('https://ikfl-nodemcu.netlify.app/api/status', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     async function controlServo() {
         try {
             const response = await fetch('https://chimerical-maamoul-383309.netlify.app/api/servo', {
+            const response = await fetch('https://ikfl-nodemcu.netlify.app/api/servo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
