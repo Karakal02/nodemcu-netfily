@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Bağlantı durumu kontrolü
     async function updateConnectionStatus() {
         try {
-            const response = await fetch('https://ikfl-nodemcu.netlify.app/api/status', {
+            const response = await fetch('https://ikfl-nodemcu.netlify.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Servo motoru kontrol etme
     async function controlServo() {
         try {
-            const response = await fetch('https://ikfl-nodemcu.netlify.app/api/servo', {
+            const response = await fetch('https://ikfl-nodemcu.netlify.app', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
